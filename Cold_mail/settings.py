@@ -3,6 +3,8 @@ from __future__ import annotations
 import os
 from dataclasses import dataclass
 
+import streamlit as st
+
 
 @dataclass(frozen=True)
 class AppSettings:
@@ -55,58 +57,68 @@ def _to_int(value: str, default: int, min_value: int = 1) -> int:
     return parsed if parsed >= min_value else default
 
 
+def _get_setting(key: str, default: str = "") -> str:
+    try:
+        value = st.secrets.get(key)
+        if value is not None:
+            return str(value).strip()
+    except Exception:
+        pass
+    return os.getenv(key, default).strip()
+
+
 
 def load_settings() -> AppSettings:
     return AppSettings(
-        smtp_host=os.getenv("SMTP_SERVER", "smtp.gmail.com"),
-        smtp_port=_to_int(os.getenv("SMTP_PORT", "587"), default=587, min_value=1),
-        smtp_user_default=os.getenv("EMAIL", ""),
-        smtp_password_default=os.getenv("PASSWORD", ""),
-        allow_signup=_to_bool(os.getenv("ALLOW_SIGNUP", "true"), default=True),
-        daily_email_limit=_to_int(os.getenv("MAX_EMAILS_PER_DAY", "200"), default=200, min_value=1),
-        hourly_email_limit=_to_int(os.getenv("MAX_EMAILS_PER_HOUR", "50"), default=50, min_value=1),
-        send_delay_seconds=_to_int(os.getenv("EMAIL_DELAY_SECONDS", "5"), default=5, min_value=0),
-        search_max_workers=_to_int(os.getenv("SEARCH_MAX_WORKERS", "6"), default=6, min_value=1),
-        remotive_api_url=os.getenv("REMOTIVE_API_URL", "https://remotive.com/api/remote-jobs").strip(),
+        smtp_host=_get_setting("SMTP_SERVER", "smtp.gmail.com"),
+        smtp_port=_to_int(_get_setting("SMTP_PORT", "587"), default=587, min_value=1),
+        smtp_user_default=_get_setting("EMAIL", ""),
+        smtp_password_default=_get_setting("PASSWORD", ""),
+        allow_signup=_to_bool(_get_setting("ALLOW_SIGNUP", "true"), default=True),
+        daily_email_limit=_to_int(_get_setting("MAX_EMAILS_PER_DAY", "200"), default=200, min_value=1),
+        hourly_email_limit=_to_int(_get_setting("MAX_EMAILS_PER_HOUR", "50"), default=50, min_value=1),
+        send_delay_seconds=_to_int(_get_setting("EMAIL_DELAY_SECONDS", "5"), default=5, min_value=0),
+        search_max_workers=_to_int(_get_setting("SEARCH_MAX_WORKERS", "6"), default=6, min_value=1),
+        remotive_api_url=_get_setting("REMOTIVE_API_URL", "https://remotive.com/api/remote-jobs"),
         remotive_max_requests_per_run=_to_int(
-            os.getenv("REMOTIVE_MAX_REQUESTS_PER_RUN", "4"),
+            _get_setting("REMOTIVE_MAX_REQUESTS_PER_RUN", "4"),
             default=4,
             min_value=1,
         ),
         remotive_timeout_seconds=_to_int(
-            os.getenv("REMOTIVE_TIMEOUT_SECONDS", "20"),
+            _get_setting("REMOTIVE_TIMEOUT_SECONDS", "20"),
             default=20,
             min_value=1,
         ),
-        remotive_user_agent=os.getenv(
+        remotive_user_agent=_get_setting(
             "REMOTIVE_USER_AGENT",
             "ai-job-hunter-cold-mailer/1.0 (+https://remotive.com)",
-        ).strip(),
-        adzuna_api_url=os.getenv(
+        ),
+        adzuna_api_url=_get_setting(
             "ADZUNA_API_URL",
             "https://api.adzuna.com/v1/api/jobs",
-        ).strip(),
-        adzuna_app_id=os.getenv("ADZUNA_APP_ID", "").strip(),
-        adzuna_api_key=os.getenv("ADZUNA_API_KEY", "").strip(),
-        adzuna_country=os.getenv("ADZUNA_COUNTRY", "in").strip().lower(),
+        ),
+        adzuna_app_id=_get_setting("ADZUNA_APP_ID", ""),
+        adzuna_api_key=_get_setting("ADZUNA_API_KEY", ""),
+        adzuna_country=_get_setting("ADZUNA_COUNTRY", "in").lower(),
         adzuna_results_per_page=_to_int(
-            os.getenv("ADZUNA_RESULTS_PER_PAGE", "20"),
+            _get_setting("ADZUNA_RESULTS_PER_PAGE", "20"),
             default=20,
             min_value=1,
         ),
-        jooble_api_url=os.getenv("JOOBLE_API_URL", "https://jooble.org/api").strip(),
-        jooble_api_key=os.getenv("JOOBLE_API_KEY", "").strip(),
-        jooble_location=os.getenv("JOOBLE_LOCATION", "India").strip(),
+        jooble_api_url=_get_setting("JOOBLE_API_URL", "https://jooble.org/api"),
+        jooble_api_key=_get_setting("JOOBLE_API_KEY", ""),
+        jooble_location=_get_setting("JOOBLE_LOCATION", "India"),
         jooble_results_per_page=_to_int(
-            os.getenv("JOOBLE_RESULTS_PER_PAGE", "20"),
+            _get_setting("JOOBLE_RESULTS_PER_PAGE", "20"),
             default=20,
             min_value=1,
         ),
-        groq_api_key=(os.getenv("GROQ_API_KEY") or os.getenv("API_KEY") or "").strip(),
-        groq_model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip(),
-        groq_api_url=os.getenv("GROQ_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip(),
+        groq_api_key=_get_setting("GROQ_API_KEY", _get_setting("API_KEY", "")),
+        groq_model=_get_setting("GROQ_MODEL", "llama-3.3-70b-versatile"),
+        groq_api_url=_get_setting("GROQ_API_URL", "https://api.groq.com/openai/v1/chat/completions"),
         groq_timeout_seconds=_to_int(
-            os.getenv("GROQ_TIMEOUT_SECONDS", "30"),
+            _get_setting("GROQ_TIMEOUT_SECONDS", "30"),
             default=30,
             min_value=1,
         ),

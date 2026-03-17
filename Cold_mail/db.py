@@ -4,14 +4,21 @@ import os
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
+import streamlit as st
 from psycopg import connect
 from psycopg.rows import dict_row
 
 
 def get_database_url() -> str:
-    db_url = os.getenv("DATABASE_URL", "").strip()
+    db_url = ""
+    try:
+        db_url = str(st.secrets.get("DATABASE_URL", "")).strip()
+    except Exception:
+        db_url = ""
     if not db_url:
-        raise RuntimeError("DATABASE_URL is missing in root .env")
+        db_url = os.getenv("DATABASE_URL", "").strip()
+    if not db_url:
+        raise RuntimeError("DATABASE_URL is missing in Streamlit secrets/environment")
     return db_url
 
 

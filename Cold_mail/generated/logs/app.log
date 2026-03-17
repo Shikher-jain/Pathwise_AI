@@ -466,3 +466,4 @@
 2026-03-17 19:06:43,321 [INFO] pipeline: [pipeline] top_jobs=0 jobs_with_skill_match=0 csv_rows=100
 2026-03-17 19:06:43,325 [INFO] pipeline: [pipeline] csv_written path=C:\shikher_jain\Automatic\Cold_mail\generated\user_shikherjain786_at_gmail_com\hr.csv rows=100
 2026-03-17 19:06:54,458 [INFO] __main__: Generated 100 leads for user_id=2
+2026-03-18 02:45:38,029 [INFO] __main__: User logged in: shikherjain786@gmail.com

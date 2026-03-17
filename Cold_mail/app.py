@@ -4,7 +4,6 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-from dotenv import load_dotenv
 
 from auth import authenticate_user, register_user
 from config import (
@@ -20,9 +19,6 @@ from logging_config import setup_logging
 from pipeline import run_resume_to_leads_pipeline
 from settings import load_settings
 from target_companies import get_target_companies
-
-ROOT_ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
-load_dotenv(dotenv_path=ROOT_ENV_PATH)
 settings = load_settings()
 
 setup_logging(Path(__file__).resolve().parent / "generated" / "logs")
