@@ -9,12 +9,36 @@ from psycopg import connect
 from psycopg.rows import dict_row
 
 
+_DB_SECRET_SECTIONS = ("database", "db", "secrets", "app", "settings")
+
+
 def get_database_url() -> str:
     db_url = ""
     try:
-        db_url = str(st.secrets.get("DATABASE_URL", "")).strip()
+        for candidate in ("DATABASE_URL", "database_url", "url"):
+            value = st.secrets.get(candidate)
+            if value:
+                db_url = str(value).strip()
+                break
     except Exception:
         db_url = ""
+
+    if not db_url:
+        try:
+            for section_name in _DB_SECRET_SECTIONS:
+                section = st.secrets.get(section_name)
+                if section is None or not hasattr(section, "get"):
+                    continue
+                for candidate in ("DATABASE_URL", "database_url", "url"):
+                    value = section.get(candidate)
+                    if value:
+                        db_url = str(value).strip()
+                        break
+                if db_url:
+                    break
+        except Exception:
+            db_url = ""
+
     if not db_url:
         db_url = os.getenv("DATABASE_URL", "").strip()
     if not db_url:

@@ -6,6 +6,22 @@ from dataclasses import dataclass
 import streamlit as st
 
 
+_SECRET_SECTIONS = (
+    "app",
+    "settings",
+    "secrets",
+    "smtp",
+    "email",
+    "limits",
+    "search",
+    "remotive",
+    "adzuna",
+    "jooble",
+    "groq",
+    "database",
+)
+
+
 @dataclass(frozen=True)
 class AppSettings:
     """Runtime configuration loaded from environment variables."""
@@ -58,12 +74,29 @@ def _to_int(value: str, default: int, min_value: int = 1) -> int:
 
 
 def _get_setting(key: str, default: str = "") -> str:
+    # 1) Top-level secrets keys.
     try:
-        value = st.secrets.get(key)
-        if value is not None:
-            return str(value).strip()
+        for candidate in (key, key.lower(), key.upper()):
+            value = st.secrets.get(candidate)
+            if value is not None:
+                return str(value).strip()
     except Exception:
         pass
+
+    # 2) Section-based keys, e.g. [smtp] SMTP_SERVER = "...".
+    try:
+        for section_name in _SECRET_SECTIONS:
+            section = st.secrets.get(section_name)
+            if section is None or not hasattr(section, "get"):
+                continue
+            for candidate in (key, key.lower(), key.upper()):
+                value = section.get(candidate)
+                if value is not None:
+                    return str(value).strip()
+    except Exception:
+        pass
+
+    # 3) Environment fallback for local runs.
     return os.getenv(key, default).strip()
 
 

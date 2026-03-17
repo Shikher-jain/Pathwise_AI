@@ -1,101 +1,46 @@
 job_id,role,company,mail,matched_skills,matched_skills_count
+5669582594,Backend Python Developer,Indium,,,0
+5661254333,Python Data Engineer,Citigroup,,,0
+5607264677,Python Data Engineer,"McAfee, Inc.",,,0
 6671191766803157110,Senior Python Backend Developer,Remote Team Solutions,,,0
+5663141579,Data Analyst - Python,UnitedHealth Group,,,0
 -5286122151484517723,Python Developer REST APIs,HireDNA,,,0
-5644422349,Data,Us Technology International Private Limited,,,0
--6262777455262336820,Python Developer,omega solutions inc,,,0
--1732611820614926028,Python Developer,TheRapidHire Private Limited,,,0
--732708089686935279,Python Developer,Apptad Inc,,,0
-923176426565683857,Python Developer,Marktine,,,0
-916531851556051921,Python Developer,Resource Innovations,,,0
-5608329099,Data Engineer-Data Integration,IBM,,,0
-5664658255,Data Engineer-Data Integration,IBM,,,0
-5607264472,Data Engineer-Data Integration,IBM,,,0
-5577259211,Data Engineer-Data Integration,IBM,,,0
-5560664851,Data Engineer-Data Integration,IBM,,,0
-5553987456,Data Engineer-Data Integration,IBM,,,0
-5585458555,Data Engineer-Data Integration,IBM,,,0
-5553987223,Data Engineer-Data Integration,IBM,,,0
-5628865225,Data Engineer-Data Integration,IBM,,,0
-5649315542,Data Engineer-Data Integration,IBM,,,0
--7341498287373267618,"Senior Software Engineer (Python, C#, C++, Linux)",Matrix Design Group,,,0
--2887070363825366678,C# Backend Game Developer,Connvertex Technologies Inc.,,,0
-6331095408317287481,Technical Data Analyst,Lorven technologies,,,0
-5664657871,Data Engineer-Data Platforms,IBM,,,0
-5644442502,Data Engineer-Data Platforms,IBM,,,0
-5664656438,Data Engineer-Data Platforms,IBM,,,0
-5613046768,Data Engineer-Data Platforms,IBM,,,0
-5463749186,Data Engineer-Data Platforms,IBM,,,0
--5790591180836465432,Senior Python Developer,BitCot Technologies,,,0
-5644442438,Data Engineer-Data Warehouse,IBM,,,0
-5623751882,Data Engineer-Data Warehouse,IBM,,,0
-5083445591766259412,REMOTE Sr Python Engineer,Insight Global,,,0
-2069747,Tech Lead Databricks Data Engineer,Mitre Media,jobs@mitremedia.com,,0
-5627769646,Data Engineer / Data Scientist,Luxoft India,,,0
-5577259242,Data Engineer-Data Modeling,IBM,,,0
--4536243733520095045,Learning & Development Graphic Design Intern,Hasbro,,,0
--87948361812506116,Senior Full Stack Python Developer,Insight Global,,,0
-4993273120553334761,Full Stack Engineer - Python+React,Creative Chaos,,,0
--2300698799751618743,"Director, Cloud Engineering",Chamberlain Group,,,0
-6312545921929950988,Data Analyst,Infyshine,,,0
+316155407228342796,Technical Data Analyst,Lorven technologies,,,0
+5655331978,Tech Python Lead,EvoluteIQ,,,0
+-2413379578547419303,Data Analyst,Infyshine,,,0
 6155216902787855153,Data Analyst,Solomon Page,,,0
--2096749070502072942,Data analyst,Cgi Technologies Corporation,,,0
+-8136388237422491857,Data analyst,Cgi Technologies Corporation,,,0
+2303456785449896715,Data Analyst,Healthix,,,0
 7562872830323039041,Data Analyst,Peraton,,,0
 -170569993251043593,Data analyst,Lensa,,,0
--4637969165350666284,Data Analyst,"Iron EagleX, Inc.",,,0
--4914062299127804401,Middle Python developer,Remote Python,,,0
--7711259043552987533,Data Analyst Remote | Full Time Or Part Time | No Experience Required,Coating Concepts,,,0
-320247638377011664,Apptad-Senior Python Developer,Apptad Inc,,,0
+5661259058,Software Engineer - Python,UnitedHealth Group,,,0
+2069747,Tech Lead Databricks Data Engineer,Mitre Media,jobs@mitremedia.com,,0
+2612002287475745026,C# Backend Game Developer,Connvertex Technologies Inc.,,,0
 -8130481898487360469,Data Architect (ME),CEDENT,,,0
 2983870087752675394,Data Architect,Inizio Partners Corp,,,0
--4576110743051311766,C# / .NET / Python Full Stack Developer,Exxon Mobil,,,0
--4859768998778253779,"Senior Full Stack Developer (React, Python)","Covalent Solutions, LLC",,,0
-5235651283,AIML Development,Best Infosystems Ltd.,,,0
-5659121170,Web Developer,Computacenter,,,0
-9148680930514372515,Remote Data Architect (Part-Time) REMOTE AGREE,ESRhealthcare and EXEC STAFF RECRUITERS,,,0
+5664648125,Python Engineer,Citigroup,,,0
+-6262777455262336820,Python Developer,omega solutions inc,,,0
+-1732611820614926028,Python Developer,TheRapidHire Private Limited,,,0
+6444607873428464231,Python Developer,Apptad Inc,,,0
+923176426565683857,Python Developer,Marktine,,,0
+916531851556051921,Python Developer,Resource Innovations,,,0
+5659134365,Python Developer,Applied Materials,,,0
+5657221021,Technical Lead Python,Innefu Labs,,,0
+-7341498287373267618,"Senior Software Engineer (Python, C#, C++, Linux)",Matrix Design Group,,,0
+-4536243733520095045,Learning & Development Graphic Design Intern,Hasbro,,,0
 -2329821453869101180,Data Modeler,Carrier World,,,0
--1832989886457290507,"SQL Developer, Bureau of IT Application and Platform Engineering",DEPT OF HEALTHMENTAL HYGIENE,,,0
--368206857911089448,Chapel Summer Internships 2025,Cal Farley's Boys Ranch,,,0
-5659119545,Developer / Sr. Developer - AI,Kumaran Systems,,,0
--2327200540095282373,2024 Tech Intern Pool,Guidepoint,,,0
-2069746,Tech Lead Full-Stack Rails Engineer,Mitre Media,jobs@mitremedia.com,,0
-2088634,AI-Native Cloud Infrastructure Generalist (m/f/d),shopware AG,,,0
-5615101575,Assembler Developer - Product Development,Rocket Software,,,0
+5598319330,Python Cloud Developer,Applied Materials,,,0
+9148680930514372515,Remote Data Architect (Part-Time) REMOTE AGREE,ESRhealthcare and EXEC STAFF RECRUITERS,,,0
+-2300698799751618743,"Director, Cloud Engineering",Chamberlain Group,,,0
+5083445591766259412,REMOTE Sr Python Engineer,Insight Global,,,0
 2120464137453059371,Data Warehouse Analyst,Cloud Analytics Technologies LLC,,,0
--8256783363195675941,"F2F Interview Full Stack Engineer (React + Python) - New York, NY, (Hybrid)",Stellent IT LLC,,,0
--7693708956033426819,Principal Software Engineer - Java/C#,Jobot,,,0
-2087694,Audio AI Trainer,Anuttacon,,,0
-2088618,AI Internet Rater,Welo Data,,,0
 -4773158836465658433,Data Solutions Analyst,Prequel Solutions,,,0
-7503949037710778655,Data Migration Analyst,Openkyber,,,0
--9077463661457640669,Systems Engineer Intern,Imperative Care,,,0
-7270775276527286389,Senior Software Engineer,Belay Technologies,,,0
--4437070031771073732,Senior Software Engineer,Belay Technologies,,,0
-5227909821094695596,"Sr. Python Developer - Bryn Mawr, PA","TWO95 International, Inc",,,0
+-4984212783426065199,Data Migration Analyst,Openkyber,,,0
+-7491819266950326330,Data Analyst - Contractor,System One,,,0
+5641050607,"Pyspark with Python, AWS",Cognizant,,,0
+-5790591180836465432,Senior Python Developer,BitCot Technologies,,,0
 -9159856399966416266,Data Architect (1122521),The Judge Group,,,0
-5914636081014422212,Clinical Data Modeler,Biogensys,,,0
-4441428267213079712,Full-stack web application developer,SGS Consulting,,,0
--6818579193557887717,Data Modeler / Analyst - Healthcare,Exusia,,,0
-660117085807693174,Senior Software Developer,General Dynamics Information Technology,,,0
--691567072313081554,Data Architect (SI Level),Purple Drive,,,0
--3685146302409768416,"Principal Software Engineer (Trading Platform, Java/C++)",NinjaTrader,,,0
-2070150,Senior DevOps Engineer,Marketerx,,,0
--5051344559969073019,Software Engineer - Primary Oracle SQL/PLSQL developer,Eliassen Group,,,0
-8650214759153443449,Graphic Design Intern - Summer 2026,PlanetArt,,,0
-3813914228852914566,Real Time Intelligence Lead Developer,Exxon Mobil,,,0
--2095284868011287715,Summer Intern 2026- Graphic Design Internship,Hasbro,,,0
-4224784243377588422,"Senior Software Engineer, Developer Journey",Discord,,,0
-5662371876,Frontend Developer,Scitara Corporation,,,0
-5661685470,Frontend Developer,Deloitte,,,0
-7262954268769744734,Graphic Design Intern,Gorilla Commerce,,,0
-8152105651709738446,Graphic Design Intern,Advanced Robotics for Manufacturing (ARM),,,0
-1680495,Office Assistant,Coalition Technologies,,,0
--3414534761697795535,Data Architect - Microsoft Dynamics 365 (CRM Modernization),Career Soft Solutions Inc.,,,0
--5786950405999103071,"Full Stack Software Engineer (JavaScript, Node.js)",WipeOS,,,0
-5668763453,Frontend Developers,SGSN Associates Pvt Ltd,,,0
-4596460612666359749,Graphic Design Summer Intern,LV Collective,,,0
-3919163155621887878,Java Front end Developer,MetaRPO,,,0
--1264264416273145474,"Mid-Level Full Stack C# Developer (TS/SCI with Poly/NEW HIRE SIGN-ON BONUS UP TO $30,000)",GDIT,,,0
-2862657661507608486,"Mid-Level Full Stack C# Developer (TS/SCI with Poly/NEW HIRE SIGN-ON BONUS UP TO $30,000)",General Dynamics Information Technology,,,0
-5647270946,Intern,Chalk Studio,,,0
-5656230848,Intern,LehLah,,,0
-5644420753,Intern,Welspun World,,,0
+5659121170,Web Developer,Computacenter,,,0
+5235651283,AIML Development,Best Infosystems Ltd.,,,0
+5577258251,Python with Pyspark and SQL,Cognizant,,,0
+5669733534,Python Architect,enGen Global,,,0

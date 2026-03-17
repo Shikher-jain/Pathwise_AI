@@ -467,3 +467,154 @@
 2026-03-17 19:06:43,325 [INFO] pipeline: [pipeline] csv_written path=C:\shikher_jain\Automatic\Cold_mail\generated\user_shikherjain786_at_gmail_com\hr.csv rows=100
 2026-03-17 19:06:54,458 [INFO] __main__: Generated 100 leads for user_id=2
 2026-03-18 02:45:38,029 [INFO] __main__: User logged in: shikherjain786@gmail.com
+2026-03-18 02:52:44,465 [INFO] pipeline: [pipeline] start user='shikherjain786_at_gmail_com' top_n=20 location='India' job_type='full_time' experience_level='fresher'
+2026-03-18 02:52:44,613 [INFO] pipeline: [pipeline] resume extracted chars=3818
+2026-03-18 02:52:47,424 [INFO] pipeline: [pipeline] skills_detected=54 sample=['python', 'java', 'pytorch', 'scikit-learn', 'pandas', 'numpy', 'flask', 'fastapi', 'machine learning', 'nlp']
+2026-03-18 02:52:47,425 [INFO] pipeline: [pipeline] query_primary='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:47,425 [INFO] pipeline: [pipeline] queries_sent=['python java pytorch scikit-learn pandas fresher full_time India']
+2026-03-18 02:52:47,426 [INFO] job_search: [search_jobs_multi] sending_queries=['python java pytorch scikit-learn pandas fresher full_time India'] location='India' job_type='full_time' timeout=20 max_workers=6
+2026-03-18 02:52:47,432 [INFO] job_search: [search_jobs] normalized_queries=['python java pytorch scikit-learn pandas fresher full_time India']
+2026-03-18 02:52:47,434 [INFO] job_search: [search_jobs][query] sending='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:47,435 [INFO] job_search: [search_jobs][remotive] query='python java pytorch scikit-learn pandas fresher full_time India' location='India' job_type='full_time'
+2026-03-18 02:52:47,436 [INFO] job_search: [search_jobs][adzuna] request what='python java pytorch scikit-learn pandas fresher full_time India' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 02:52:47,436 [INFO] job_search: [search_jobs][jooble] request keywords='python java pytorch scikit-learn pandas fresher full_time India' location='India'
+2026-03-18 02:52:48,815 [INFO] job_search: [search_jobs][remotive] api_results=0 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:48,979 [INFO] job_search: [search_jobs][jooble] api_results=30 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:48,980 [INFO] job_search: [search_jobs][Jooble] returned=20 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:49,086 [INFO] job_search: [search_jobs][adzuna] api_results=0 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:49,087 [INFO] job_search: [search_jobs][adzuna] fallback_relaxed_query='python'
+2026-03-18 02:52:49,087 [INFO] job_search: [search_jobs][adzuna] request what='python' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 02:52:49,821 [INFO] job_search: [search_jobs][Remotive] returned=6 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:51,014 [INFO] job_search: [search_jobs][adzuna] fallback_results=20 query='python'
+2026-03-18 02:52:51,019 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:51,022 [INFO] job_search: [search_jobs][query] merged_total=46 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 02:52:51,028 [INFO] pipeline: [pipeline] jobs_after_multi_search=46
+2026-03-18 02:52:51,033 [INFO] pipeline: [pipeline] jobs_after_experience_filter=0 (before=46 keyword='fresher')
+2026-03-18 02:52:51,034 [INFO] pipeline: [pipeline] ranked_jobs_count=0
+2026-03-18 02:52:51,034 [INFO] pipeline: [pipeline] no jobs matched even after fallback; forcing broadest search.
+2026-03-18 02:52:51,035 [INFO] job_search: [search_jobs_multi] sending_queries=['internship', 'developer', 'python', 'data'] location='' job_type='' timeout=20 max_workers=6
+2026-03-18 02:52:51,038 [INFO] job_search: [search_jobs] normalized_queries=['internship', 'developer', 'python', 'data']
+2026-03-18 02:52:51,041 [INFO] job_search: [search_jobs][query] sending='internship'
+2026-03-18 02:52:51,042 [INFO] job_search: [search_jobs][query] sending='developer'
+2026-03-18 02:52:51,043 [INFO] job_search: [search_jobs][query] sending='python'
+2026-03-18 02:52:51,045 [INFO] job_search: [search_jobs][remotive] query='internship' location='' job_type=''
+2026-03-18 02:52:51,046 [INFO] job_search: [search_jobs][query] sending='data'
+2026-03-18 02:52:51,048 [INFO] job_search: [search_jobs][remotive] query='developer' location='' job_type=''
+2026-03-18 02:52:51,050 [INFO] job_search: [search_jobs][remotive] query='python' location='' job_type=''
+2026-03-18 02:52:51,055 [INFO] job_search: [search_jobs][adzuna] request what='internship' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 02:52:51,057 [INFO] job_search: [search_jobs][remotive] query='data' location='' job_type=''
+2026-03-18 02:52:51,060 [INFO] job_search: [search_jobs][adzuna] request what='developer' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 02:52:51,061 [INFO] job_search: [search_jobs][adzuna] request what='python' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 02:52:51,063 [INFO] job_search: [search_jobs][jooble] request keywords='internship' location=''
+2026-03-18 02:52:51,067 [INFO] job_search: [search_jobs][adzuna] request what='data' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 02:52:51,068 [INFO] job_search: [search_jobs][jooble] request keywords='developer' location=''
+2026-03-18 02:52:51,070 [INFO] job_search: [search_jobs][jooble] request keywords='python' location=''
+2026-03-18 02:52:51,072 [INFO] job_search: [search_jobs][jooble] request keywords='data' location=''
+2026-03-18 02:52:52,823 [INFO] job_search: [search_jobs][remotive] api_results=3 query='python'
+2026-03-18 02:52:52,836 [INFO] job_search: [search_jobs][Remotive] returned=3 query='python'
+2026-03-18 02:52:52,865 [INFO] job_search: [search_jobs][jooble] api_results=30 query='data'
+2026-03-18 02:52:52,870 [INFO] job_search: [search_jobs][Jooble] returned=20 query='data'
+2026-03-18 02:52:52,902 [INFO] job_search: [search_jobs][remotive] api_results=7 query='developer'
+2026-03-18 02:52:52,929 [INFO] job_search: [search_jobs][Remotive] returned=7 query='developer'
+2026-03-18 02:52:52,981 [INFO] job_search: [search_jobs][remotive] api_results=0 query='internship'
+2026-03-18 02:52:53,006 [INFO] job_search: [search_jobs][Remotive] returned=0 query='internship'
+2026-03-18 02:52:53,007 [INFO] job_search: [search_jobs][Remotive] empty response for query='internship'
+2026-03-18 02:52:53,392 [INFO] job_search: [search_jobs][jooble] api_results=30 query='internship'
+2026-03-18 02:52:53,393 [INFO] job_search: [search_jobs][Jooble] returned=19 query='internship'
+2026-03-18 02:52:53,615 [INFO] job_search: [search_jobs][jooble] api_results=30 query='python'
+2026-03-18 02:52:53,619 [INFO] job_search: [search_jobs][Jooble] returned=20 query='python'
+2026-03-18 02:52:53,651 [INFO] job_search: [search_jobs][jooble] api_results=30 query='developer'
+2026-03-18 02:52:53,652 [INFO] job_search: [search_jobs][Jooble] returned=20 query='developer'
+2026-03-18 02:52:53,685 [INFO] job_search: [search_jobs][adzuna] api_results=20 query='python'
+2026-03-18 02:52:53,685 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='python'
+2026-03-18 02:52:53,686 [INFO] job_search: [search_jobs][query] merged_total=43 query='python'
+2026-03-18 02:52:53,808 [INFO] job_search: [search_jobs][adzuna] api_results=20 query='data'
+2026-03-18 02:52:53,809 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='data'
+2026-03-18 02:52:53,901 [INFO] job_search: [search_jobs][adzuna] api_results=20 query='internship'
+2026-03-18 02:52:53,902 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='internship'
+2026-03-18 02:52:53,902 [INFO] job_search: [search_jobs][query] merged_total=39 query='internship'
+2026-03-18 02:52:53,969 [INFO] job_search: [search_jobs][adzuna] api_results=20 query='developer'
+2026-03-18 02:52:53,970 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='developer'
+2026-03-18 02:52:53,971 [INFO] job_search: [search_jobs][query] merged_total=47 query='developer'
+2026-03-18 02:52:54,457 [INFO] job_search: [search_jobs][remotive] api_results=13 query='data'
+2026-03-18 02:52:54,497 [INFO] job_search: [search_jobs][Remotive] returned=13 query='data'
+2026-03-18 02:52:54,499 [INFO] job_search: [search_jobs][query] merged_total=53 query='data'
+2026-03-18 02:52:59,457 [INFO] pipeline: [pipeline] broadest fallback jobs count=20
+2026-03-18 02:52:59,457 [INFO] pipeline: [pipeline] top_jobs=0 jobs_with_skill_match=0 csv_rows=20
+2026-03-18 02:52:59,738 [INFO] pipeline: [pipeline] csv_written path=C:\shikher_jain\Automatic\Cold_mail\generated\user_shikherjain786_at_gmail_com\hr.csv rows=20
+2026-03-18 02:53:03,143 [INFO] __main__: Generated 20 leads for user_id=2
+2026-03-18 03:42:58,907 [INFO] pipeline: [pipeline] start user='shikherjain786_at_gmail_com' top_n=45 location='India' job_type='full_time' experience_level='fresher'
+2026-03-18 03:42:59,534 [INFO] pipeline: [pipeline] resume extracted chars=3818
+2026-03-18 03:43:01,006 [INFO] pipeline: [pipeline] skills_detected=47 sample=['python', 'java', 'pytorch', 'scikit-learn', 'pandas', 'numpy', 'flask', 'fastapi', 'machine learning', 'nlp']
+2026-03-18 03:43:01,006 [INFO] pipeline: [pipeline] query_primary='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:01,007 [INFO] pipeline: [pipeline] queries_sent=['python java pytorch scikit-learn pandas fresher full_time India']
+2026-03-18 03:43:01,007 [INFO] job_search: [search_jobs_multi] sending_queries=['python java pytorch scikit-learn pandas fresher full_time India'] location='India' job_type='full_time' timeout=20 max_workers=6
+2026-03-18 03:43:01,445 [INFO] job_search: [search_jobs] normalized_queries=['python java pytorch scikit-learn pandas fresher full_time India']
+2026-03-18 03:43:01,447 [INFO] job_search: [search_jobs][query] sending='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:01,448 [INFO] job_search: [search_jobs][remotive] query='python java pytorch scikit-learn pandas fresher full_time India' location='India' job_type='full_time'
+2026-03-18 03:43:01,450 [INFO] job_search: [search_jobs][adzuna] request what='python java pytorch scikit-learn pandas fresher full_time India' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 03:43:01,451 [INFO] job_search: [search_jobs][jooble] request keywords='python java pytorch scikit-learn pandas fresher full_time India' location='India'
+2026-03-18 03:43:04,080 [INFO] job_search: [search_jobs][remotive] api_results=0 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:04,234 [INFO] job_search: [search_jobs][jooble] api_results=30 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:04,235 [INFO] job_search: [search_jobs][Jooble] returned=20 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:04,708 [INFO] job_search: [search_jobs][Remotive] returned=6 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:04,820 [INFO] job_search: [search_jobs][adzuna] api_results=0 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:04,821 [INFO] job_search: [search_jobs][adzuna] fallback_relaxed_query='python'
+2026-03-18 03:43:04,822 [INFO] job_search: [search_jobs][adzuna] request what='python' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 03:43:06,698 [INFO] job_search: [search_jobs][adzuna] fallback_results=20 query='python'
+2026-03-18 03:43:06,699 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:06,726 [INFO] job_search: [search_jobs][query] merged_total=46 query='python java pytorch scikit-learn pandas fresher full_time India'
+2026-03-18 03:43:06,759 [INFO] pipeline: [pipeline] jobs_after_multi_search=46
+2026-03-18 03:43:06,760 [INFO] pipeline: [pipeline] jobs_after_experience_filter=0 (before=46 keyword='fresher')
+2026-03-18 03:43:06,761 [INFO] pipeline: [pipeline] ranked_jobs_count=0
+2026-03-18 03:43:06,761 [INFO] pipeline: [pipeline] no jobs matched even after fallback; forcing broadest search.
+2026-03-18 03:43:06,761 [INFO] job_search: [search_jobs_multi] sending_queries=['internship', 'developer', 'python', 'data'] location='' job_type='' timeout=20 max_workers=6
+2026-03-18 03:43:06,762 [INFO] job_search: [search_jobs] normalized_queries=['internship', 'developer', 'python', 'data']
+2026-03-18 03:43:06,763 [INFO] job_search: [search_jobs][query] sending='internship'
+2026-03-18 03:43:06,764 [INFO] job_search: [search_jobs][query] sending='developer'
+2026-03-18 03:43:06,765 [INFO] job_search: [search_jobs][query] sending='python'
+2026-03-18 03:43:06,765 [INFO] job_search: [search_jobs][query] sending='data'
+2026-03-18 03:43:06,766 [INFO] job_search: [search_jobs][remotive] query='developer' location='' job_type=''
+2026-03-18 03:43:06,767 [INFO] job_search: [search_jobs][remotive] query='internship' location='' job_type=''
+2026-03-18 03:43:06,769 [INFO] job_search: [search_jobs][remotive] query='python' location='' job_type=''
+2026-03-18 03:43:06,771 [INFO] job_search: [search_jobs][remotive] query='data' location='' job_type=''
+2026-03-18 03:43:06,772 [INFO] job_search: [search_jobs][adzuna] request what='developer' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 03:43:06,774 [INFO] job_search: [search_jobs][adzuna] request what='internship' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 03:43:06,776 [INFO] job_search: [search_jobs][adzuna] request what='python' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 03:43:06,778 [INFO] job_search: [search_jobs][adzuna] request what='data' url='https://api.adzuna.com/v1/api/jobs/in/search/1'
+2026-03-18 03:43:06,789 [INFO] job_search: [search_jobs][jooble] request keywords='developer' location=''
+2026-03-18 03:43:06,791 [INFO] job_search: [search_jobs][jooble] request keywords='internship' location=''
+2026-03-18 03:43:06,795 [INFO] job_search: [search_jobs][jooble] request keywords='python' location=''
+2026-03-18 03:43:06,797 [INFO] job_search: [search_jobs][jooble] request keywords='data' location=''
+2026-03-18 03:43:08,197 [INFO] job_search: [search_jobs][remotive] api_results=0 query='internship'
+2026-03-18 03:43:08,250 [INFO] job_search: [search_jobs][Remotive] returned=0 query='internship'
+2026-03-18 03:43:08,253 [INFO] job_search: [search_jobs][Remotive] empty response for query='internship'
+2026-03-18 03:43:08,308 [INFO] job_search: [search_jobs][remotive] api_results=7 query='developer'
+2026-03-18 03:43:08,320 [INFO] job_search: [search_jobs][Remotive] returned=7 query='developer'
+2026-03-18 03:43:08,322 [INFO] job_search: [search_jobs][remotive] api_results=3 query='python'
+2026-03-18 03:43:08,330 [INFO] job_search: [search_jobs][Remotive] returned=3 query='python'
+2026-03-18 03:43:08,333 [INFO] job_search: [search_jobs][remotive] api_results=13 query='data'
+2026-03-18 03:43:08,409 [INFO] job_search: [search_jobs][Remotive] returned=13 query='data'
+2026-03-18 03:43:08,787 [INFO] job_search: [search_jobs][jooble] api_results=30 query='data'
+2026-03-18 03:43:08,790 [INFO] job_search: [search_jobs][Jooble] returned=20 query='data'
+2026-03-18 03:43:09,005 [INFO] job_search: [search_jobs][Adzuna] error query='data' error=429 Client Error: Too Many Requests for url: https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=e8816211&app_key=d21301e629fb063af8e6f255cb8df7c0&what=data&results_per_page=20&content-type=application%2Fjson
+2026-03-18 03:43:09,010 [INFO] job_search: [search_jobs][query] merged_total=33 query='data'
+2026-03-18 03:43:09,288 [INFO] job_search: [search_jobs][jooble] api_results=30 query='developer'
+2026-03-18 03:43:09,289 [INFO] job_search: [search_jobs][jooble] api_results=30 query='internship'
+2026-03-18 03:43:09,290 [INFO] job_search: [search_jobs][Jooble] returned=20 query='developer'
+2026-03-18 03:43:09,291 [INFO] job_search: [search_jobs][Jooble] returned=19 query='internship'
+2026-03-18 03:43:09,299 [INFO] job_search: [search_jobs][jooble] api_results=30 query='python'
+2026-03-18 03:43:09,300 [INFO] job_search: [search_jobs][Jooble] returned=20 query='python'
+2026-03-18 03:43:09,463 [INFO] job_search: [search_jobs][adzuna] api_results=20 query='python'
+2026-03-18 03:43:09,463 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='python'
+2026-03-18 03:43:09,466 [INFO] job_search: [search_jobs][query] merged_total=43 query='python'
+2026-03-18 03:43:09,608 [INFO] job_search: [search_jobs][adzuna] api_results=20 query='internship'
+2026-03-18 03:43:09,615 [INFO] job_search: [search_jobs][adzuna] api_results=20 query='developer'
+2026-03-18 03:43:09,617 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='internship'
+2026-03-18 03:43:09,618 [INFO] job_search: [search_jobs][Adzuna] returned=20 query='developer'
+2026-03-18 03:43:09,619 [INFO] job_search: [search_jobs][query] merged_total=39 query='internship'
+2026-03-18 03:43:09,620 [INFO] job_search: [search_jobs][query] merged_total=47 query='developer'
+2026-03-18 03:43:09,727 [INFO] pipeline: [pipeline] broadest fallback jobs count=45
+2026-03-18 03:43:09,727 [INFO] pipeline: [pipeline] top_jobs=0 jobs_with_skill_match=0 csv_rows=45
+2026-03-18 03:43:09,781 [INFO] pipeline: [pipeline] csv_written path=C:\shikher_jain\Automatic\Cold_mail\generated\user_shikherjain786_at_gmail_com\hr.csv rows=45
+2026-03-18 03:43:16,051 [INFO] __main__: Generated 45 leads for user_id=2
