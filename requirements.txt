@@ -1,0 +1,10 @@
+streamlit>=1.40
+python-dotenv>=1.0
+pdfplumber>=0.11
+requests>=2.32
+pandas>=2.2
+scikit-learn>=1.5
+selenium>=4.25
+# Optional: used for semantic ranking; TF-IDF fallback is used if unavailable.
+sentence-transformers>=3.0; python_version < "3.13"
+psycopg[binary]>=3.2
