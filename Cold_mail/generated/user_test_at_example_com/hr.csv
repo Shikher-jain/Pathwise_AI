@@ -1,4 +1,0 @@
-job_id,role,company,mail,matched_skills,matched_skills_count
-fallback-1,Python Intern,Target Company 1,,python,1
-fallback-2,Python Intern,Target Company 2,,python,1
-fallback-3,Python Intern,Target Company 3,,python,1

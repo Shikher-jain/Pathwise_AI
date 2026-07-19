@@ -1,23 +1,8 @@
+*.env
+.venv/
+.streamlit/
 __pycache__/
 *.pyc
 
-# Local virtual environments
-.venv/
-venv/
-
-# IDE and OS
-.vscode/
-.DS_Store
-
-# Secrets
-.env
-.streamlit/secrets.toml
-secret
-
-
-
-# App runtime/generated files
-Cold_mail.py/generated/user_*/
-Cold_mail.py/generated/email_log.csv
-Cold_mail.py/resume/
-Cold_mail.py/uploads/resumes/*.pdf
+hr[0-9]*.csv
+sent_history.csv
